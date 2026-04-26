@@ -2,12 +2,12 @@
   {
     "kernelSource": {
       "name": "kernel",
-      "repo": "https://github.com/Mi-Eldarion/msm-4.19",
-      "branch": "dt2w",
-      "device": "ysl",
-      "defconfig": "vendor/msm8953-perf_defconfig"
-  },
-    "withKernelSU": true,
+      "repo": "https://github.com/crsvt/test",
+      "branch": "main",
+      "device": "onclite",
+      "defconfig": "vendor/onclite-perf_defconfig"
+    },
+    "withKernelSU": false,
     "toolchains": [
       {
         "repo": "https://github.com/kdrag0n/proton-clang",
@@ -17,7 +17,7 @@
       }
     ],
     "params": {
-     "ARCH": "arm64",
+      "ARCH": "arm64",
       "CC": "proton-clang/bin/clang",
       "externalCommand": {
         "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
@@ -35,9 +35,9 @@
     },
     "AnyKernel3": {
       "use": true,
-      "release": true,
-      "repo": "https://github.com/k4ngcaribug/Anykernel3",
-      "branch": "ysl"
+      "release": false,
+      "repo": "https://github.com/crsvt/AnyKernel3",
+      "branch": "main"
     }
   }
 ]
